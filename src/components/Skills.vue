@@ -1,14 +1,25 @@
 <template>
     <div class="hello">
-        Skills
+        <div id="holder">
+            <ul>
+                <li v-for="(data, index) in skills" :key='index'>{{ index }}. {{ data.skill }}</li>
+            </ul>
+            <p v-if="skills.length >= 1">You have more than 1 skill</p>
+            <p v-else>You less than or equal to 1 skill</p>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
   name: "Skills",
-  props: {
-
+  data() {
+      return {
+          skills: [
+              { 'skill': 'Vue.js' },
+              { 'skill': 'Frontend Developer' }
+          ]
+      }
   }
 };
 </script>
