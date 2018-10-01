@@ -1,36 +1,37 @@
 <template>
-	<div id="app">
-		<Skills />
-	</div>
+  <div id="app">
+    <Skills />
+  </div>
 </template>
 
 <script>
 import Skills from "./components/Skills.vue";
 
 export default {
-	name: "app",
-	components: {
-		Skills
-	}
+  name: "app",
+  components: {
+    Skills
+  }
 };
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 body {
-  background-color: #EEEEEE;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #eeeeee;
+  font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
 }
-body, html {
+body,
+html {
   margin: 0;
   height: 100%;
 }
 #app {
-    width: 50%;
+  width: 50%;
 }
 </style>
