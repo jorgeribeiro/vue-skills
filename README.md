@@ -1,4 +1,5 @@
 # vue-skills
+Project to learn new skills in Vue.js
 
 ## Project setup
 ```
